@@ -1,0 +1,2 @@
+# remote_hotkey_controller
+遠隔でPCのホットキーを操作するためのスクリプト

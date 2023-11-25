@@ -18,11 +18,13 @@ pip install discord
 ## for_discord
 1. ディスコードbotで使うには、まずdiscord botを作成してください。
 2. 作成したbotのtokenを払い出してください。
-3. for_discordディレクトリにあるconfig.jsonを開き、discord_api_keyのvalに2で作成したkeyを入力
-4. config.jsonにホットキーの情報を入力する（特殊キーはpyautoguiに準拠）
-5. main.pyをホットキーの情報に合わせて書き換える
-6. 下記のコマンドで起動する
+3. discordbotを任意のサーバに招待しておく。
+4. for_discordディレクトリにあるconfig.jsonを開き、discord_api_keyのvalに2で作成したkeyを入力
+5. config.jsonにホットキーの情報を入力する（特殊キーはpyautoguiに準拠）
+6. main.pyをホットキーの情報に合わせて書き換える
+7. 下記のコマンドで起動する
 ```
 python main.py
 ```
-
+※discordのサーバで`/rec`とコマンドを叩くとbotが作動するようになっています。
+※配信でリプレイバッファにたまっている映像を録画したいモチベーションがあったので、ホットキーをそのように割り当てて録画できるようにしました。

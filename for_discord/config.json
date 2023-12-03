@@ -1,5 +1,8 @@
 {
     "discord_api_key":"ここにあなたのdiscord bot keyを入れてください",
     "recode_short_key":["alt","shift","r"],
-    "recode_key":["alt","shift","e"]
+    "recode_key":["alt","shift","e"],
+    "drive_dir": "your drive dir",
+    "normal_dir": "your normal clip dir",
+    "short_dir": "your normal short clip dir"
 }

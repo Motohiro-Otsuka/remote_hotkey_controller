@@ -85,7 +85,7 @@ async def capture(ctx,title):
     date_str = date.strftime('%Y-%m-%d')
     thread_name = '{}_{}'.format(date_str,title)
     #スレッドの作成
-    thread = await channel.create_thread(name=thread_name,reason="クリップ録画API")#スレッドを作る
+    thread = await channel.create_thread(name=thread_name,reason="クリップ録画API",type=discord.ChannelType.public_thread)#スレッドを作る
     #録画用のために作ったスレッド以外は許容しない
     allow_recoed_thread_id.append(thread.id)
     #移動先のディレクトリ名はスレッドidで管理する
@@ -113,7 +113,5 @@ async def capture(ctx,title):
     await thread.send("何でもいいのでこのスレッドに送信したらクリップが作成されます。")
     await ctx.send(f'スレッド `{thread_name}` が作成されました： {thread.mention}')
 
-def copy_drive(drive_dir, from_dir):
-    pass  # 制作中
 
 client.run(config["discord_api_key"])
